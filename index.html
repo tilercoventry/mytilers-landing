@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyTilers - Coming Soon</title>
-    
+    <title>MyTilers is Launching Soon!</title>
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="MyTilers - The ultimate tilers directory. Be among the first to join and claim your exclusive early access!">
-    <meta name="keywords" content="tilers directory, professional tilers, find a tiler, advertise tiling services">
+    <meta name="description" content="Join MyTilers, the largest directory for professional tilers. Get early access and enjoy discounted advertising rates.">
+    <meta name="keywords" content="tilers directory, professional tilers, tiling services, tiling professionals">
     <meta name="author" content="MyTilers">
     <meta name="robots" content="index, follow">
     
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mytilers.com/" />
+
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="MyTilers is Launching Soon!">
+    <meta property="og:description" content="Join the largest directory for professional tilers. Be among the first to list your business when we go live!">
+    <meta property="og:url" content="https://mytilers.com">
+    <meta name="twitter:card" content="summary_large_image">
+
     <style>
         * {
             margin: 0;
@@ -22,69 +31,74 @@
             background: #111;
             text-align: center;
             color: #fff;
+            padding: 20px;
         }
         .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            padding: 20px;
-        }
-        .cta {
-            background: #d7263d;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-        .cta:hover {
-            background: #a31c2b;
-        }
-        .form-container {
+            max-width: 500px;
+            margin: auto;
+            padding: 40px;
             background: #222;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 20px;
-            max-width: 400px;
-            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
         }
-        .form-container input {
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        input, textarea {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             margin: 10px 0;
             border: none;
             border-radius: 5px;
+            background: #333;
+            color: #fff;
+            font-size: 1rem;
         }
-        .form-container button {
+        input::placeholder, textarea::placeholder {
+            color: #bbb;
+        }
+        button {
             background: #d7263d;
             color: white;
-            padding: 10px 15px;
+            padding: 12px;
             border: none;
             cursor: pointer;
             border-radius: 5px;
+            font-size: 1.1rem;
+            width: 100%;
         }
-        .form-container button:hover {
+        button:hover {
             background: #a31c2b;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #bbb;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1>MyTilers is Launching Soon!</h1>
         <p>Join the largest directory for professional tilers. Be among the first to list your business when we go live!</p>
-        
-        <div class="form-container">
-            <h2>Register for Early Access</h2>
-            <form action="mailto:sales@mytilers.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="business" placeholder="Business Name (if any)">
-                <button type="submit">Join the Waitlist</button>
-            </form>
-        </div>
+
+        <h2>Register for Early Access</h2>
+
+        <form action="https://formspree.io/YOUR_FORMSPREE_ENDPOINT" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Tell us about your business" rows="4" required></textarea>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <p class="footer">We'll notify you when we launch.</p>
     </div>
+
 </body>
 </html>
